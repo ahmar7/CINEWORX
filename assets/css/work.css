@@ -238,6 +238,11 @@ p:last-child {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
+.close {
+  top: 2rem;
+  right: 2rem;
+  position: absolute;
+}
 .transition {
   -webkit-transition-duration: 0.15s;
   transition-duration: 0.15s;
