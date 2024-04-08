@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>CINEWORX | Video Production and Photography Company |</title>
+    <meta
+      content="Transform your message into a captivating visual story with our professional video production company. We specialize in creating stunning, high-quality videos for businesses and individuals. Elevate your brand or project with our expert videography and editing services. Contact us today for top-tier video production that exceeds your expectations."
+      name="description"
+    />
+    <meta
+      content="Film production,Cinematography,Creative storytelling,Visual content,Professional videography,Editing services,Filmography,Cinematic projects,Film industry,Media production,Cineworx productions"
+      name="Keywords"
+    />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link rel="stylesheet" href="./assets/css/work.css" />
+    <!-- Google Fonts -->
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/owl.carousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <!-- Script for lazy-loading -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"></script>
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Name: BizPage - Cineworx
+  ======================================================== -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-265MDY3PJL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-265MDY3PJL');
+</script> -->
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top work-header header-transparent">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-xl-11 d-flex align-items-center">
+            <!-- <h1 class="logo mr-auto"><a href="index.html">BizPage</a></h1>-->
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <a href="index.html" class="logo mr-auto"
+              ><img
+                src="assets/img/cineworxlogow.png"
+                alt="cineworx logo"
+                class="img-fluid"
+            /></a>
+
+            <nav class="nav-menu d-none d-lg-block">
+              <ul>
+                <li class=""><a href="index.html">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li class="active"><a href="./our-work.html">Our Work</a></li>
+                <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+                <!-- <li><a href="#team">Team</a></li>  -->
+                <!-- <li class="drop-down"><a href="">Drop Down</a>
+                <ul>
+                  <li><a href="#">Drop Down 1</a></li>
+                  <li><a href="#">Drop Down 3</a></li>
+                  <li><a href="#">Drop Down 4</a></li>
+                  <li><a href="#">Drop Down 5</a></li>
+                </ul>
+              </li>  -->
+                <li><a href="#contact">Contact Us</a></li>
+              </ul> </nav
+            ><!-- .nav-menu -->
+          </div>
+        </div>
+      </div> </header
+    ><!-- End Header -->
+
+    <!-- ======= Work Section ======= -->
+    <div class="work-section">
+      <div class="relative flex-1" id="container">
+        <section class="relative pt-32 bg-light dark:bg-dark">
+          <div class="flex w-full px-4 mx-auto max-w-7xl sm:px-6">
+            <div class="space-y-10">
+              <div
+                class="w-full prose dark:prose-invert max-w-none prose-em:text-primary prose-em:not-italic"
+              >
+                <h1 class="max-w-4xl mb-8 text-xl sm:text-2xl">Our Work</h1>
+                <div class="max-w-lg">
+                  <p
+                    >To understand how we work and our experience, please view
+                    our portfolio using the filters below. We also have a series
+                    of detailed case studies containing further information.<br
+                  /></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div>
+          <section
+            id="entries"
+            class="relative w-full pt-16 pb-16 bg-light dark:bg-dark"
+          >
+            <div class="flex w-full content-wide mx-auto px-4 sm:px-6">
+              <div
+                class="flex flex-col w-full"
+                x-data="{open:false, video:null, results:true}"
+                x-id="['card-video-modal']"
+                x-effect="if(!open){$refs.modalContent.innerHTML=''}else{$refs.modalContent.innerHTML='<lite-vimeo x-ref=\'modalVideo\' class=\'w-full\' videoid=\''+video+'\'  params=\'color=FF572D\'></lite-vimeo>', $nextTick(() => { $refs.modalVideo.click() })}"
+              >
+                <div
+                  class="grid items-stretch justify-center w-full grid-cols-1 gap-3 md:grid-cols-3"
+                  x-effect="typeof filters !== 'undefined' &amp;&amp; Object.entries(filters), $nextTick(() => { results = $el.querySelectorAll('a:not([style=\'display: none;\'])').length == 0 ? false : true })"
+                >
+                  <a
+                    class="flex h-full"
+                    x-data="{show:true}"
+                    x-show="show"
+                    onclick="openVideoModal('932219856')"
+                  >
+                    <div
+                      class="relative flex flex-col w-full h-full overflow-hidden cursor-pointer group"
+                      x-effect='typeof filters === &apos;undefined&apos; || filters.length == 0 || (filters.services ? ["brand-product-promo","tv-adverts"].includes(filters.services) : true) &amp;&amp; (filters.sectors ? [].includes(filters.sectors) : true) &amp;&amp; (filters.locations ? [].includes(filters.locations) : true) ? show=true : show=false'
+                    >
+                      <div class="relative w-full overflow-hidden">
+                        <div class="aspect-[16/9]">
+                          <img
+                            data-vimeo="https://vimeo.com/932219856"
+                            class="absolute object-cover w-full h-full transition-transform duration-1000 group-hover:scale-105"
+                            alt=""
+                            src="./assets/img/thumb.png"
+                          />
+                        </div>
+                      </div>
+
+                      <div
+                        class="relative flex-1 w-full px-6 py-5 bg-[#2C2C2C] text-light custom-pad"
+                      >
+                        <div
+                          class="absolute inset-x-0 bottom-0 h-full bg-[#555555] max-h-0 group-hover:max-h-full transition-[max-height] duration-300"
+                        ></div>
+                        <div
+                          class="absolute w-4 h-4 transition duration-300 ease-in-out bg-transparent border-b border-r bottom-6 right-5 group-hover:translate-x-1 group-hover:translate-y-1 border-light"
+                        ></div>
+                        <div class="relative mb-4 text-base"
+                          >Red Letter Days</div
+                        >
+                        <div class="relative">
+                          <span
+                            class="relative inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold uppercase font-sans tracking-tighter bg-primary text-light mr-1"
+                            >Brand &amp; Product Promo</span
+                          >
+                          <span
+                            class="relative inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold uppercase font-sans tracking-tighter bg-primary text-light mr-1"
+                            >TV Adverts</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a
+                    class="flex h-full"
+                    x-data="{show:true}"
+                    x-show="show"
+                    onclick="openVideoModal('195553729')"
+                    x-on:click="video = '195553729', open = true"
+                  >
+                    <div
+                      class="relative flex flex-col w-full h-full overflow-hidden cursor-pointer group"
+                      x-effect='typeof filters === &apos;undefined&apos; || filters.length == 0 || (filters.services ? ["tv-adverts"].includes(filters.services) : true) &amp;&amp; (filters.sectors ? [].includes(filters.sectors) : true) &amp;&amp; (filters.locations ? ["london"].includes(filters.locations) : true) ? show=true : show=false'
+                    >
+                      <div class="relative w-full overflow-hidden">
+                        <div class="aspect-[16/9]">
+                          <img
+                            data-vimeo="https://vimeo.com/195553729"
+                            class="absolute object-cover w-full h-full transition-transform duration-1000 group-hover:scale-105"
+                            alt=""
+                            src="https://i.vimeocdn.com/video/607795668-8d3e38b5904c4129f446c0b4ea9c80755f0e98d41f79a84545670450e8b24dac-d_1600x900"
+                          />
+                        </div>
+                      </div>
+
+                      <div
+                        class="relative flex-1 w-full px-6 py-5 bg-[#2C2C2C] text-light custom-pad"
+                      >
+                        <div
+                          class="absolute inset-x-0 bottom-0 h-full bg-[#555555] max-h-0 group-hover:max-h-full transition-[max-height] duration-300"
+                        ></div>
+                        <div
+                          class="absolute w-4 h-4 transition duration-300 ease-in-out bg-transparent border-b border-r bottom-6 right-5 group-hover:translate-x-1 group-hover:translate-y-1 border-light"
+                        ></div>
+                        <div class="relative mb-4 text-base">Airbnb</div>
+                        <div class="relative">
+                          <span
+                            class="relative inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold uppercase font-sans tracking-tighter bg-primary text-light mr-1"
+                            >TV Adverts</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a
+                    class="flex h-full"
+                    x-data="{show:true}"
+                    x-show="show"
+                    onclick="openVideoModal('751682385')"
+                    x-on:click="video = '751682385/b88ee8f232', open = true"
+                  >
+                    <div
+                      class="relative flex flex-col w-full h-full overflow-hidden cursor-pointer group"
+                      x-effect="typeof filters === 'undefined' || filters.length == 0 || (filters.services ? [&quot;documentary&quot;].includes(filters.services) : true) &amp;&amp; (filters.sectors ? [].includes(filters.sectors) : true) &amp;&amp; (filters.locations ? [].includes(filters.locations) : true) ? show=true : show=false"
+                    >
+                      <div class="relative w-full overflow-hidden">
+                        <div class="aspect-[16/9]">
+                          <img
+                            data-vimeo="https://vimeo.com/751682385/b88ee8f232"
+                            class="absolute object-cover w-full h-full transition-transform duration-1000 group-hover:scale-105"
+                            alt=""
+                            src="https://i.vimeocdn.com/video/1511095328-2d64b4eae3afd717a4ff5c8ddffb40ed993b070c16b5132f72f37967007ef6d8-d_1600x900"
+                          />
+                        </div>
+                      </div>
+
+                      <div
+                        class="relative flex-1 w-full px-6 py-5 bg-[#2C2C2C] text-light custom-pad"
+                      >
+                        <div
+                          class="absolute inset-x-0 bottom-0 h-full bg-[#555555] max-h-0 group-hover:max-h-full transition-[max-height] duration-300"
+                        ></div>
+                        <div
+                          class="absolute w-4 h-4 transition duration-300 ease-in-out bg-transparent border-b border-r bottom-6 right-5 group-hover:translate-x-1 group-hover:translate-y-1 border-light"
+                        ></div>
+                        <div class="relative mb-4 text-base">Bloomberg</div>
+                        <div class="relative">
+                          <span
+                            class="relative inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold uppercase font-sans tracking-tighter bg-primary text-light mr-1"
+                            >Documentary</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a
+                    class="flex h-full"
+                    x-data="{show:true}"
+                    x-show="show"
+                    onclick="openVideoModal('823066616')"
+                    x-on:click="video = '823066616/1290a7a9f3', open = true"
+                  >
+                    <div
+                      class="relative flex flex-col w-full h-full overflow-hidden cursor-pointer group"
+                      x-effect="typeof filters === 'undefined' || filters.length == 0 || (filters.services ? [&quot;animation&quot;].includes(filters.services) : true) &amp;&amp; (filters.sectors ? [].includes(filters.sectors) : true) &amp;&amp; (filters.locations ? [].includes(filters.locations) : true) ? show=true : show=false"
+                    >
+                      <div class="relative w-full overflow-hidden">
+                        <div class="aspect-[16/9]">
+                          <img
+                            data-vimeo="https://vimeo.com/823066616/1290a7a9f3"
+                            class="absolute object-cover w-full h-full transition-transform duration-1000 group-hover:scale-105"
+                            alt=""
+                            src="https://i.vimeocdn.com/video/1664295087-4c58503f36986c717db06a51fb7d4fb15cfc9fddc923b0bd6692d26874235a17-d_1600x900"
+                          />
+                        </div>
+                      </div>
+
+                      <div
+                        class="relative flex-1 w-full px-6 py-5 bg-[#2C2C2C] text-light custom-pad"
+                      >
+                        <div
+                          class="absolute inset-x-0 bottom-0 h-full bg-[#555555] max-h-0 group-hover:max-h-full transition-[max-height] duration-300"
+                        ></div>
+                        <div
+                          class="absolute w-4 h-4 transition duration-300 ease-in-out bg-transparent border-b border-r bottom-6 right-5 group-hover:translate-x-1 group-hover:translate-y-1 border-light"
+                        ></div>
+                        <div class="relative mb-4 text-base"
+                          >Muller (Frijj)</div
+                        >
+                        <div class="relative">
+                          <span
+                            class="relative inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold uppercase font-sans tracking-tighter bg-primary text-light mr-1"
+                            >Animation</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a
+                    class="flex h-full"
+                    x-data="{show:true}"
+                    x-show="show"
+                    onclick="openVideoModal('708156754')"
+                    x-on:click="video = '708156754/9ad91ed084', open = true"
+                  >
+                    <div
+                      class="relative flex flex-col w-full h-full overflow-hidden cursor-pointer group"
+                      x-effect='typeof filters === &apos;undefined&apos; || filters.length == 0 || (filters.services ? ["sensory"].includes(filters.services) : true) &amp;&amp; (filters.sectors ? ["food-drink"].includes(filters.sectors) : true) &amp;&amp; (filters.locations ? [].includes(filters.locations) : true) ? show=true : show=false'
+                    >
+                      <div class="relative w-full overflow-hidden">
+                        <div class="aspect-[16/9]">
+                          <img
+                            data-vimeo="https://vimeo.com/708156754/9ad91ed084"
+                            class="absolute object-cover w-full h-full transition-transform duration-1000 group-hover:scale-105"
+                            alt=""
+                            src="https://i.vimeocdn.com/video/1429033767-4ce58fb34aef88ebd9174431678fd2391ecb494d03f4a22902b1439345576fa0-d_1600x900"
+                          />
+                        </div>
+                      </div>
+
+                      <div
+                        class="relative flex-1 w-full px-6 py-5 bg-[#2C2C2C] text-light custom-pad"
+                      >
+                        <div
+                          class="absolute inset-x-0 bottom-0 h-full bg-[#555555] max-h-0 group-hover:max-h-full transition-[max-height] duration-300"
+                        ></div>
+                        <div
+                          class="absolute w-4 h-4 transition duration-300 ease-in-out bg-transparent border-b border-r bottom-6 right-5 group-hover:translate-x-1 group-hover:translate-y-1 border-light"
+                        ></div>
+                        <div class="relative mb-4 text-base">Kerry Foods</div>
+                        <div class="relative">
+                          <span
+                            class="relative inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold uppercase font-sans tracking-tighter bg-primary text-light mr-1"
+                            >Sensory</span
+                          >
+                          <span
+                            class="relative inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold uppercase font-sans tracking-tighter bg-primary text-light mr-1"
+                            >Food &amp; Drink</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+
+                  <div
+                    x-show="open"
+                    style="display: none"
+                    @keydown.escape.prevent.stop="open=false"
+                    class="fixed inset-0 z-50 overflow-y-auto"
+                    aria-labelledby="modal-title"
+                    role="dialog"
+                    aria-modal="true"
+                  >
+                    <div
+                      class="flex items-end justify-center min-h-screen text-center sm:block"
+                    >
+                      <div
+                        x-show="open"
+                        x-transition.opacity=""
+                        class="fixed inset-0 bg-black/80 backdrop-blur"
+                        aria-hidden="true"
+                        style="display: none"
+                      ></div>
+                      <div
+                        x-show="open"
+                        x-transition=""
+                        class="relative w-full flex items-center justify-center min-h-screen p-4 pt-10 sm:pt-16"
+                        style="display: none"
+                      >
+                        <div
+                          @click.stop=""
+                          x-trap.noscroll.inert="open"
+                          class="inline-block overflow-hidden align-bottom transition-all transform shadow-xl sm:align-middle sm:max-w-5xl w-full"
+                        >
+                          <div
+                            class="relative aspect-[16/9] bg-dark"
+                            :id="$id('card-video-modal')"
+                            x-ref="modalContent"
+                            id="card-video-modal-1"
+                          ></div>
+                        </div>
+                      </div>
+                      <button
+                        type="button"
+                        class="absolute top-1 sm:top-4 right-1 sm:right-4 text-light hover:text-primary focus:outline-none focus:ring-1 focus:ring-light"
+                        @click="open = false"
+                      >
+                        <svg
+                          class="w-6 h-6"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 25.072 25.261"
+                        >
+                          <g
+                            id="Group_8319"
+                            data-name="Group 8319"
+                            transform="translate(-1171.3 -38.084)"
+                          >
+                            <path
+                              id="Path_805"
+                              data-name="Path 805"
+                              d="M12.277,0,0,12.272,12.277,24.553"
+                              transform="translate(1183.93 62.991) rotate(180)"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="1"
+                            ></path>
+                            <path
+                              id="Path_73390"
+                              data-name="Path 73390"
+                              d="M12.277,0,0,12.272,12.277,24.553"
+                              transform="translate(1183.741 38.438)"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="1"
+                            ></path>
+                          </g>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- ======= Work Section ======= -->
+<div id="videoModal" class="modal">
+    <!-- <span class="close">&times;</span> -->
+    <button type="button" class="close absolute btn-troa top-1 sm:top-4 right-1 sm:right-4 text-light hover:text-primary focus:outline-none focus:ring-1 focus:ring-light" @click="open = false" aria-hidden="true">
+				<svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.072 25.261">
+				  <g id="Group_8319" data-name="Group 8319" transform="translate(-1171.3 -38.084)">
+					<path id="Path_805" data-name="Path 805" d="M12.277,0,0,12.272,12.277,24.553" transform="translate(1183.93 62.991) rotate(180)" fill="none" stroke="currentColor" stroke-width="1"></path>
+					<path id="Path_73390" data-name="Path 73390" d="M12.277,0,0,12.272,12.277,24.553" transform="translate(1183.741 38.438)" fill="none" stroke="currentColor" stroke-width="1"></path>
+				  </g>
+				</svg>
+			</button>
+  <div class="modal-content">
+    <div id="videoPlayer"></div>
+  </div>
+</div>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>CINEWORX</h3>
+            <p>Is a video production and photography company that specialises in creating stunning visual stories and captivating images. We offer professional services to businesses. Engage your audience and convey your message effectively with Cineworx</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Home</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">About us</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Services</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              Cineworx Ltd<br>
+              The Old Post Office<br>
+              8 The Green<br>
+              Aylesbury <br>
+              Buckinghamshire<br>
+              HP22 4AR<br>
+              <strong>Phone:</strong> 07970 917851<br>
+              <strong>Email:</strong> hello@cineworx.co.uk<br>
+              <strong>Company Number:</strong> 15046096<br>
+              <strong>VAT Number:</strong> 452451017<br>
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="youtube"  aria-label="YouTube"><span class="hidden-it">youtube</span> <i class="fa fa-youtube-play"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100095149574784" class="facebook" aria-label="Facebook"><span class="hidden-it">facebook</span><i class="fa fa-facebook"></i></a>
+              <a href="https://www.instagram.com/cine.worx/" class="instagram"aria-label="Instagram"><span class="hidden-it">instagram</span><i class="fa fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/cineworx-ltd" class="linkedin" aria-label="Linkedin"><span class="hidden-it">linkedin</span><i class="fa fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+         <div class="col-lg-3 col-md-6 footer-newsletter">
+             <h4>Our Newsletter</h4>
+             <p>Our newsletter delivers captivating film insights, industry updates, and exclusive content. Stay informed about the cinematic world's latest trends and releases. Subscribe now for your dose of cinematic excellence!</p>
+             <form action="" method="post">
+              <label for="email"class="hidden-it" >Email</label>
+               <input type="email" id="email" name="email"><input class="asla" type="submit" value="Subscribe">
+             </form>
+           </div>
+
+         </div>
+       </div>
+     </div>
+
+     <div class="container">
+       <div class="copyright">
+         &copy; Copyright <strong>Cineworx ltd</strong>. All Rights Reserved
+       </div>
+
+     </div>
+   </footer><!-- End Footer -->
+    <!-- <div id="videoModal" class="modal fixed inset-0 z-50 overflow-y-auto">
+      <div
+        class="modal-content flex items-end justify-center min-h-screen text-center sm:block"
+      >
+        <button
+          type="button"
+          class="absolute top-1 sm:top-4 right-1 sm:right-4 text-light hover:text-primary focus:outline-none focus:ring-1 focus:ring-light"
+          @click="open = false"
+        >
+          <svg
+            class="w-6 h-6"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 25.072 25.261"
+          >
+            <g
+              id="Group_8319"
+              data-name="Group 8319"
+              transform="translate(-1171.3 -38.084)"
+            >
+              <path
+                id="Path_805"
+                data-name="Path 805"
+                d="M12.277,0,0,12.272,12.277,24.553"
+                transform="translate(1183.93 62.991) rotate(180)"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1"
+              ></path>
+              <path
+                id="Path_73390"
+                data-name="Path 73390"
+                d="M12.277,0,0,12.272,12.277,24.553"
+                transform="translate(1183.741 38.438)"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1"
+              ></path>
+            </g>
+          </svg>
+        </button>
+        <div id="videoPlayer"></div>
+      </div>
+    </div> -->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!-- Uncomment below i you want to use a preloader -->
+    <!-- <div id="preloader"></div> -->
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/counterup/counterup.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="./assets/js/work.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
