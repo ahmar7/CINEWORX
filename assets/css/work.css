@@ -245,6 +245,7 @@ p:last-child {
   top: 2rem !important;
   opacity: 1 !important;
   color: white !important;
+  z-index: 9999999999999999999999999999999 !important;
   right: 2rem !important;
   position: absolute !important;
 }
