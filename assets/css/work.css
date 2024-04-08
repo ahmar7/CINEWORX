@@ -239,9 +239,9 @@ p:last-child {
   transition-duration: 0.3s;
 }
 .close {
-  top: 2rem;
-  right: 2rem;
-  position: absolute;
+  top: 2rem !important;
+  right: 2rem !important;
+  position: absolute !important;
 }
 .transition {
   -webkit-transition-duration: 0.15s;
