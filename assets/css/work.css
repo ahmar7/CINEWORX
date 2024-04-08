@@ -481,7 +481,9 @@ svg {
   transition: all 0.3s ease;
   cursor: pointer !important;
 }
-
+.mobile-nav-toggle {
+  top: 40px !important;
+}
 /* Modal Popup */
 .modal {
   display: none; /* Hide modal by default */
