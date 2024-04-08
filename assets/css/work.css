@@ -8,7 +8,7 @@
   position: relative;
 }
 .pt-32 {
-  padding-top: 8rem;
+  padding-top: 13rem;
 }
 
 .px-4 {
@@ -237,6 +237,9 @@ p:last-child {
 .duration-300 {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+}
+#header {
+  background-color: rgba(0, 0, 0, 0.9) !important;
 }
 .close {
   top: 2rem !important;
